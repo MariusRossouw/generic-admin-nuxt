@@ -73,6 +73,10 @@
             <button
               style="float:right"
               class="uk-button uk-button-default"
+              @click="graph_fetch_data()">Refresh</button>
+            <button
+              style="float:right"
+              class="uk-button uk-button-default"
               @click="grid_download()">Download</button>
           </div>
           <div class="uk-card-body card_no_pad">
@@ -83,6 +87,9 @@
               :rowData="rowData"
               style="height: 50vh; "
               class="ag-theme-balham"/>
+          </div>
+          <div class="uk-card-footer ">
+            <h2>Pagination</h2>
           </div>
         </div>
       </div>
